@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - oraclejdk8
+
+env:
+    global:
+        - _MVN='mvn -B -V'
+
+install: true
+
+script:
+    - env
+    - $_MVN clean verify
+
