@@ -10,5 +10,6 @@ install: true
 
 script:
     - env
+    - exit
     - $_MVN clean verify
 
