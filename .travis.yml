@@ -17,4 +17,3 @@ script:
     - env
     - if [ -n "$TRAVIS_TAG" ]; then exit 0; fi
     - $_MVN clean verify
-
