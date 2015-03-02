@@ -12,5 +12,5 @@ script:
     - export LAST_COMMIT_MSG=`git log -1 --pretty=%s`
     - env
     - if [ -n "$TRAVIS_TAG" ]; then exit 0; fi
-    - $_MVN clean verify
+    - $_MVN clean install
 
