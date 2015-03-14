@@ -19,7 +19,7 @@
 
     <groupId>test</groupId>
     <artifactId>test</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
 
     <description>test project</description>
     <url>http://slawekjaranowski.github.io/test</url>
