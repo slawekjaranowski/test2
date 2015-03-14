@@ -64,6 +64,18 @@
                         <skipDeploy>true</skipDeploy>
                     </configuration>
                 </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.1</version>
+                    <configuration>
+                        <preparationGoals>clean</preparationGoals>
+                        <goal>install</goal>
+                        <releaseProfiles>release</releaseProfiles>
+                    </configuration>
+                </plugin>
+
             </plugins>
         </pluginManagement>
 

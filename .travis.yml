@@ -2,17 +2,18 @@ language: java
 jdk:
   - oraclejdk8
 
-env:
-    global:
-        - _MVN='mvn -B -V'
-
 install: true
 
 script:
-    - export LAST_COMMIT_MSG=`git log -1 --pretty=%s`
-    - 
-        env; 
-        cat ~/.m2/settings.xml; 
-        if [ -z "$TRAVIS_TAG" ]; then 
-            $_MVN clean verify; 
+    -
+        if [ -z "$TRAVIS_TAG" ]; then
+            if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "master" ]; then
+                $_MVN clean install;
+            else
+                $_MVN clean verify;
+            fi
         fi
+
+env:
+    global:
+        - _MVN='mvn -B -V -e'
