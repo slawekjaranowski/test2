@@ -19,7 +19,7 @@
 
     <groupId>test</groupId>
     <artifactId>test</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.3</version>
 
     <description>test project</description>
     <url>http://slawekjaranowski.github.io/test</url>
@@ -28,7 +28,7 @@
         <connection>scm:git:git@github.com:slawekjaranowski/test2.git</connection>
         <developerConnection>${project.scm.connection}</developerConnection>
         <url>https://github.com/slawekjaranowski/test2</url>
-        <tag>HEAD</tag>
+        <tag>test-1.3</tag>
     </scm>
 
     <distributionManagement>
