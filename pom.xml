@@ -26,9 +26,9 @@
     <url>http://slawekjaranowski.github.io/test</url>
 
     <scm>
-        <connection>scm:git:git@github.com:slawekjaranowski/test.git</connection>
+        <connection>scm:git:git@github.com:slawekjaranowski/test2.git</connection>
         <developerConnection>${project.scm.connection}</developerConnection>
-        <url>https://github.com/slawekjaranowski/test</url>
+        <url>https://github.com/slawekjaranowski/test2</url>
         <tag>HEAD</tag>
     </scm>
 
