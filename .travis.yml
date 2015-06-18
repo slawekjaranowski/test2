@@ -31,4 +31,4 @@ cache:
     - $HOME/.m2/
 
 before_cache:
-  - rm -fR - $HOME/.m2/com.github/
+    - rm -fR - $HOME/.m2/com/github/
