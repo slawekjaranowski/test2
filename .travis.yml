@@ -1,6 +1,10 @@
 language: java
-jdk:
-  - oraclejdk8
+
+matrix:
+    - jdk: oraclejdk8
+      env: _MVN_GOAL=goal1
+    - jdk: oraclejdk7
+      env: _MVN_GOAL=goal2
 
 install: true
 
